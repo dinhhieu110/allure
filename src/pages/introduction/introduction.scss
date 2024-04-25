@@ -1,0 +1,54 @@
+@import '../common.scss';
+@import '../../breakpoints/breakpoints.scss';
+.intro-container {
+  @include common-styles;
+  .logo-image {
+    img {
+      margin: 9px 0 -16px;
+    }
+  }
+  .frame {
+    margin: 40px 0 8px;
+    .title {
+      margin-bottom: 10px;
+      color: rgb(23, 29, 36);
+      font-size: 24px;
+    }
+    .design-text-title {
+      font-size: 32px;
+    }
+    .file-guide {
+      margin: 8px 0;
+      padding: 14px;
+      border: 1px solid rgb(242, 243, 244);
+    }
+  }
+  .browsers-table {
+    .box {
+      border: 1px solid rgb(242, 243, 244);
+      padding: 8px;
+      width: 143px;
+      @include l {
+        font-size: 12px;
+        padding: 2px;
+      }
+      .browser {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        img {
+          width: 32px;
+          height: 32px;
+          @include l {
+            width: 16px;
+            height: 16px;
+          }
+        }
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

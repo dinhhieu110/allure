@@ -1,0 +1,15 @@
+.error-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  .error-btn {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+}

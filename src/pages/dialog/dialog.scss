@@ -1,0 +1,129 @@
+@import '../common.scss';
+
+.dialog-container {
+  @include common-styles;
+
+  .dialog-intro {
+    margin: 40px 0 8px 0;
+    .intro-title {
+      font-size: 32px;
+      color: #171d24;
+      margin-bottom: 10px;
+    }
+  }
+  .dialog-when {
+    margin: 40px 0 8px 0;
+    .when-title {
+      font-size: 24px;
+      color: #171d24;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 14px 0;
+    }
+  }
+  .dialog-usage {
+    margin: 40px 0 8px 0;
+    .usage-title {
+      font-size: 24px;
+      color: #171d24;
+      margin-bottom: 10px;
+    }
+    .usage-para {
+      p {
+        margin: 14px 0;
+        text-decoration: underline;
+      }
+    }
+  }
+  .demo-box {
+    border: 2px solid rgb(242, 243, 244);
+    .open-btn {
+      background-color: #fff;
+      border: 2px solid rgb(242, 243, 244);
+      padding: 10px;
+      border-radius: 5px;
+      color: #323e4d;
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(217, 221, 227);
+      }
+    }
+    .open-demo {
+      padding: 24px;
+      border-bottom: 2px solid rgb(242, 243, 244);
+    }
+    .code-demo {
+      padding: 24px;
+      border-bottom: 2px solid rgb(242, 243, 244);
+      display: none;
+    }
+    .openDisplay {
+      padding: 16px;
+      font-size: 12px;
+      border-bottom: 2px solid rgb(242, 243, 244);
+      display: inline-block;
+    }
+    .close-demo {
+      width: 100%;
+      background-color: #fff;
+      border: none;
+      height: 48px;
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(217, 221, 227);
+        .icon {
+          color: blueviolet;
+        }
+      }
+    }
+  }
+  .dialog-confirm {
+    .confirm-title {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+    .confirm-box {
+      border: 2px solid rgb(242, 243, 244);
+      .openConfirm-btn {
+        background-color: #fff;
+        border: 2px solid rgb(242, 243, 244);
+        padding: 10px;
+        border-radius: 5px;
+        color: #323e4d;
+        font-weight: 600;
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(217, 221, 227);
+        }
+      }
+      .openConfirm-demo {
+        padding: 24px;
+        border-bottom: 2px solid rgb(242, 243, 244);
+      }
+      .codeConfirm-demo {
+        display: none;
+      }
+      .openDisplay {
+        padding: 16px;
+        font-size: 12px;
+        border-bottom: 2px solid rgb(242, 243, 244);
+        display: inline-block;
+      }
+      .closeConfirm-demo {
+        width: 100%;
+        background-color: #fff;
+        border: none;
+        height: 48px;
+        &:hover {
+          cursor: pointer;
+          background-color: rgb(217, 221, 227);
+          .icon {
+            color: blueviolet;
+          }
+        }
+      }
+    }
+  }
+}
